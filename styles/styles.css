@@ -1,0 +1,251 @@
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a.ativo {
+    color: var(--rojo);
+}
+
+header nav a:hover{
+    color: #00d4ff;
+}
+
+
+
+/*  ----  ----  ---- Filme Principal ----- --- ---- */
+.filme-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url('../img/backdrop.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.filme-principal .container {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.filme-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.filme-principal .descricao {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.filme-principal .botao {
+    background: #aa1919;
+   /* background: rgba(0,0,0, 0.5);*/
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.filme-principal .botao:hover {
+    background: #00d4ff;
+    color: #000;
+
+   /* background: #fff;
+    color: #000;*/
+}
+
+
+.filme-principal .botao i {
+    margin-right: 1.25em;
+}
+
+/* ------ ---------- -------- Container Principal e setas ------- -------- ----- */
+.container-titulo-controles {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-titulo-controles h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.container-titulo-controles .indicadores button {
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.container-titulo-controles .indicadores button:hover,
+.container-titulo-controles .indicadores button.ativo {
+    background: red;
+}
+
+
+
+
+
+
+.filmes-recomendados{
+    margin-bottom: 70px;
+}
+
+.filmes-recomendados .container-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.filmes-recomendados .container-principal .seta-esquerda,
+.filmes-recomendados .container-principal .seta-direita {
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0,0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+
+.filmes-recomendados .container-principal .seta-esquerda:hover,
+.filmes-recomendados .container-principal .seta-direita:hover {
+    background: rgba(0,0,0, .9);
+}
+
+.filmes-recomendados .container-principal .seta-esquerda {
+    left: 0;
+}
+
+.filmes-recomendados .container-principal .seta-direita {
+    right: 0;
+}
+
+
+/* --------- ----------- ---------- Carousel ------- --- - ------- */
+.filmes-recomendados .container-carousel {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.filmes-recomendados .container-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.filmes-recomendados .container-carousel .carousel .filme{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.filmes-recomendados .container-carousel .carousel .filme.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.filmes-recomendados .container-carousel .carousel .filme img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* -------  -------- - -- Media Queries ------ ------- ---- */
+@media screen and (max-width: 800px) {
+    header .logo {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .filme-principal {
+        font-size: 14px;
+    }
+
+    .filme-principal .descricao {
+        max-width: 100%;
+    }
+
+    .filmes-recomendados .container-carousel {
+        overflow: visible;
+    }
+
+    .filmes-recomendados .container-carousel .carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .filmes-recomendados .indicadores,
+    .filmes-recomendados .seta-esquerda,
+    .filmes-recomendados .seta-direita {
+        display: none;
+    }
+
+}

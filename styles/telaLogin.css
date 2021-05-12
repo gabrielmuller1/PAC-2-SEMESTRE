@@ -1,0 +1,53 @@
+* {
+    color: white;
+    font-family: Roboto;
+    background-color: black;
+}
+
+
+.quadrado {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 30px;
+}
+
+.quadrado h1 {
+    font-weight: 400;
+}
+
+#nome {
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 22px;
+    background-color: gray;
+    color: white;
+}
+
+#senha {
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 30px;
+    background-color: gray;
+    color: white;
+}
+
+#botaoSubmit {
+    padding: 10px;
+    padding-left: 135px;
+    padding-right: 135px;
+    background-color: red;
+    font-size: 16px;
+}
+
+#senha::placeholder, #nome::placeholder {
+    color: white;
+}
+
+#merchan {
+    margin-top: 120px;
+}

@@ -1,0 +1,61 @@
+* {
+    color: white;
+    font-family: Roboto;
+}
+
+
+body {
+    background-image: url('../img/bgnetflix.jpg');
+    background-color: rgba(0,0,0,0.5);
+}
+
+.quadrado {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+}
+
+#subtitulo{
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+#inputemail {
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+
+#inputsubmit {
+    background-color: red;
+    color: black;
+    padding: 20px;
+    margin-right: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+#inputsubmit:hover {
+    background-color: brown;
+}
+
+#inputsubmitAlternative {
+    background-color: cadetblue;
+    color: white;
+    padding: 20px;
+    margin-right: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+#inputsubmitAlternative:hover {
+    background-color: aqua;
+}

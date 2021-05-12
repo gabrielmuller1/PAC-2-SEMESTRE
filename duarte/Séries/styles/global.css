@@ -1,0 +1,129 @@
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+}
+
+#container header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+#container header h1 {
+    font-size: 30px;
+    color: #f22;
+    cursor: pointer;
+}
+
+#container header span {
+    font-size: 30px;
+    color: #00f;
+}
+
+#container header nav ul {
+    display: flex;
+}
+#container header nav ul li {
+    margin-left: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#container header nav ul li:hover {
+    color: #00f;
+}
+#container main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  #container main .video-container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #container main .video-container .video-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -250px;
+    width: 50%;
+    height: 60%;
+    background-color: #000;
+    z-index: 999999;
+  }
+
+  #container main .video-container .video-player img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #container main .video-container .next-movies {
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(0,0, 0,0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #container main .video-container .next-movies .movie1 {
+    background-image: url(../src/assets/pb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#container main .video-container .next-movies .movie2 {
+    background-image: url(../src/assets/lacasadepapel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#container main .video-container .next-movies .movie3 {
+    background-image: url(../src/assets/bb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#container main .video-container .next-movies .movie4 {
+    background-image: url(../src/assets/friends.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    cursor: pointer;
+}

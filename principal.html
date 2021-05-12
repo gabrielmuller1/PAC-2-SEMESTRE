@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>GrenalMovies - O melhor lugar para assistir</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/grenalmovies.png" width="100px" class="logotipo">
+            <nav>
+               <!--- <a href="#" class="ativo">Inicio</a>  -->
+                <a href="./duartenovo/teste1.html">Filmes</a>
+                <a href="./duartenovo/teste2.html">Séries</a>
+                <a href="./duartenovo/teste.html">Animes</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                 <h3 class="titulo">Attack on Titan</h3>
+                 <p class="descricao">
+                    Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa.
+                </p>
+                <a href="./duartenovo/Anime/Anime1/public/index.html" target="_blank"><button role="button" class="botao"><i class="fas fa-play"></i>Reproduzir</button></a>
+                <a href="./duartenovo/Anime/Anime1/public/index.html" target="_blank"><button role="button" class="botao"><i class="fas fa-info-circle"></i>Mais informações</button></a>
+            </div>
+        </div>
+
+        <div class="filmes-recomendados container">
+            <div class="container-titulo-controles">
+                <h3>Obras recomendadas</h3>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="container-principal">
+                <button role="button" id="seta-esquerda" class="seta-esquerda"><i class="fas fa-angle-left"></i></button>
+
+                <div class="container-carousel">
+                    <div class="carousel">
+                        <div class="filme">
+                            <a href="https://www.crunchyroll.com/pt-br/attack-on-titan" target="_blank"><img src="./img/t1.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.amazon.com/BABYLON/dp/B07YQP7PDF" target="_blank"><img src="./img/t.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.crunchyroll.com/pt-br/goblin-slayer" target="_blank"><img src="./img/t3.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.netflix.com/br/title/81145640" target="_blank"><img src="./img/t4.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.amazon.com/The-Boys-Season-1/dp/B07QNJCXZK" target="_blank"><img src="./img/t5.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.crunchyroll.com/pt-br/rezero-starting-life-in-another-world-" target="_blank"><img src="./img/t6.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.crunchyroll.com/pt-br/darling-in-the-franxx"><img src="./img/t7.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://iscreamanimes.net/filmes/tenki-no-ko/"><img src="./img/t8.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.netflix.com/br/title/60023642"><img src="./img/t9.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.netflix.com/br/title/60032294"><img src="./img/t10.jpg" alt=""></a>
+                        </div>
+                        <div class="filme">
+                            <a href="https://www.crunchyroll.com/pt-br/my-hero-academia"><img src="./img/t11.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button role="button" id="seta-direita" class="seta-direita"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/5add845100.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+    <script>
+        setTimeout(() => {
+            prompt('Digite sua satisfação com os nossos serviços de 0 a 10')
+        }, 15000)
+    </script>
+
+
+    <footer>
+        <div style="background-color: var(--rojo);">
+            <center><p style="color:#fff;">© Todos os direitos reservados 2020. Desenvolvido pelo Grupo Grenal</p></center>
+        </div>
+    </footer>
+
+</body>
+</html>

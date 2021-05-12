@@ -1,0 +1,17 @@
+* {
+    color: black;
+    font-family: Roboto;
+    background-color: black;
+}
+
+#email, #senha, #cemail, #csenha, #nome, #sobrenome, #cpf, #nascimento, #dede1, #dede2, #telefone, #telefone2, #cep, #endereco, #numero, #complemento, #bairro, #cidade, #estado {
+  background-color: white;
+}
+
+h3 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
